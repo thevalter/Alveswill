@@ -42,3 +42,13 @@ class MobileNavbar {
     ".nav-list li",
   );
   mobileNavbar.init();
+
+  // // var form = document.querySelector(".form");
+
+  var btnSubmit = document.querySelector("#btn-submit");
+  
+  btnSubmit.addEventListener('click', function(){
+    var form = document.querySelector(".form");
+    alert(form);
+  })
+

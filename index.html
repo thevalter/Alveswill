@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
-  <title>Document</title>
+  <title>Alveswill</title>
 </head>
 
 <body>
@@ -103,6 +103,7 @@
         <img src="img/sobre.jpg" alt="">
       </div>
     </section>
+
     <section id="servicos">
       <div class="img-servicos">
         <img src="img/service1.jpg" alt="">
@@ -110,18 +111,23 @@
       <p>I offer some services like Visual Identity, flags, folders, illustrations, visit cards, event layout, 2D and 3D
         animation, logos, banners, layouts, catalogs, advertisements, advertisements and many other things.</p>
     </section>
-    <form class="form">
-      <h2>Contact-me</h2>
-      <div class="input-wrapper">
-        <p>Name: <input id="form-nome" type="text"></p>
-        <p>subject: <label for="form-assunto"></label> <input type="text" id="form-assunto"></p>
-        <div class="email-tel-wrapper">
-          <p>Email: <input type="email" name="" id=""></p>
-          <p>Tel: <input type="tel" name="" id=""></p>
-          <button id="btn-submit">submit</button>
-        </div>
-      </div>
-    </form>
+    
+    <div id="formulario">
+      <h2>Contact</h2>
+      <div id="alert">Please fill in all fields before submitting.</div>
+      <label for="nome">Name:</label>
+      <input type="text" id="nome">
+      <label for="assunto">Subject:</label>
+      <input type="text" id="assunto">
+      <label for="email">Email:</label>
+      <input type="text" id="email">
+      <label for="tel">Tel:</label>
+      <input type="text" id="tel">
+      <button type="submit" id="btn-submit">Submit</button>
+    </div>
+     <div id="show-formulario">
+       <p id="text"></p>
+     </div>
   </main>
 
   <footer id="rodape">
@@ -133,12 +139,18 @@
     <p> ©Copyright 2022 - All rights reserved</p>
   </footer>
 
-  <script src="js/script.js"></script>
+
   <script src="js/owl/jquery.min.js"></script>
   <script src="js/owl/owl.carousel.min.js"></script>
-  <script src="js/setup.js"></script>
   <script src="https://kit.fontawesome.com/d9feee0e86.js" crossorigin="anonymous"></script>
-
+  <script
+      type="text/javascript"
+      src="https://npmcdn.com/parse/dist/parse.min.js"
+    ></script>
+    <script src="js/form.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/setup.js"></script>
+  
 </body>
 
 </html>

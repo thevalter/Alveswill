@@ -80,4 +80,17 @@
     #servicos p{
       font-size: 0.9rem;
     }
+
+    #formulario{
+      margin-left: 17.5%;
+      margin-right: 17.5%;
+      width: 65%;
+    }
+
+    #show-formulario{
+      font-size: 1.2rem;
+      width: 30%;
+      margin-right: 35%;
+      margin-left: 35%;
+    }
   }

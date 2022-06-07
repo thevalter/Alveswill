@@ -42,7 +42,7 @@ function createParseContato(){
         }
 }
 
-document.getElementById('btn-submit').addEventListener("click", function(){
+document.querySelector('.btn-submit').addEventListener("click", function(){
     createParseContato();
 });
 

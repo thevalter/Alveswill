@@ -14,6 +14,14 @@
       transition: transform 0.3s ease-in;
     }
 
+    .nav-list.activeLD{
+      background: #fff;
+    }
+    
+    .logo{
+      margin-right: 50%;
+    }
+
     .nav-list li {
       margin-left: 0;
       opacity: 0;
@@ -21,6 +29,10 @@
 
     #contact{
       background-color: #000000;
+    }
+
+    #contact.activeLD{
+      background-color: #ffffff;
     }
 
     .icons-wrapper{
@@ -66,6 +78,11 @@
   }
 
   @media screen and (max-width: 700px) {
+
+    .logo{
+      margin-right: 35%;
+      font-size: 2.2rem;
+    }
 
     .titulo{
       font-size: 1.5rem;

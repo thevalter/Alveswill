@@ -27,7 +27,6 @@
         <div class="line3"></div>
       </div>
       <ul class="nav-list">
-        <li><a href="#sobre">About Me</a></li>
         <li><a href="#servicos">Services</a></li>
         <li id="contact"><a href="#rodape">Contact</a></li>
         <li><a href="#"></a></li>
@@ -38,6 +37,11 @@
         </div>
       </ul>
     </nav>
+    <div class="btn-ld-wrapper">
+      <div class="btn-ld"></div>
+      <p class="text-light">LIGHT MODE</p>
+      <p class="text-dark">DARK MODE</p>
+    </div>
   </header>
 
   <main>
@@ -101,7 +105,8 @@
     </div>
 
     <section id="sobre">
-      <p>I've been working with graphics and illustrator design for a few years, I'm passionate about all kinds of art,
+      <p class="sobre-txt">I've been working with graphics and illustrator design for a few years, I'm passionate about
+        all kinds of art,
         I'm very creative and I can make an impact in everything I create.</p>
       <div class="img-sobre">
         <img src="img/sobre.jpg" alt="">
@@ -112,26 +117,27 @@
       <div class="img-servicos">
         <img src="img/service1.jpg" alt="">
       </div>
-      <p>I offer some services like Visual Identity, flags, folders, illustrations, visit cards, event layout, 2D and 3D
+      <p class="servicos-txt">I offer some services like Visual Identity, flags, folders, illustrations, visit cards,
+        event layout, 2D and 3D
         animation, logos, banners, layouts, catalogs, advertisements, advertisements and many other things.</p>
     </section>
 
     <div id="formulario">
-      <h2>Contact</h2>
+      <h2 class="form-title">Contact</h2>
       <div id="alert">Please fill in all fields before submitting.</div>
-      <label for="nome">Name:</label>
-      <input type="text" id="nome">
-      <label for="assunto">Subject:</label>
-      <input type="text" id="assunto">
-      <label for="email">Email:</label>
-      <input type="text" id="email">
-      <label for="tel">Tel:</label>
-      <input type="text" id="tel">
-      <button type="submit" id="btn-submit">Submit</button>
-    </div>
-    <div id="show-formulario">
-      <p id="text"></p>
-    </div>
+      <label class="form-label1" for="nome">Name:</label>
+      <input class="form-input1" type="text" id="nome">
+      <label class="form-label2" for="assunto">Subject:</label>
+      <input class="form-input2" type="text" id="assunto">
+      <label class="form-label3" for="email">Email:</label>
+      <input class="form-input3" type="text" id="email">
+      <label class="form-label4" for="tel">Tel:</label>
+      <input class="form-input4" type="text" id="tel">
+      <button type="submit" class="btn-submit">Submit</button>
+      </div>
+      <div id="show-formulario">
+        <p id="text"></p>
+      </div>
   </main>
 
   <footer id="rodape">
@@ -140,7 +146,7 @@
       <a href=""><i class="fa-brands fa-whatsapp-square"></i></a>
       <a href=""><i class="fa-brands fa-twitter-square"></i></a>
     </div>
-    <p> ©Copyright 2022 - All rights reserved</p>
+    <p class="rodape-txt"> ©Copyright 2022 - All rights reserved</p>
   </footer>
 
 

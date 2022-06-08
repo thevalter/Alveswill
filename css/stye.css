@@ -370,26 +370,31 @@
     border-color: #3f3e3e;
     border-bottom-style: dashed;
     cursor: pointer;
+    color: #c8c0c0;
   }
 
   .form-input1.activeLD{
     background-color: #fff;
     border-color: #000;
+    color: #000000;
   }
   .form-input2.activeLD{
     background-color: #fff;
     border-color: #000;
+    color: #000000;
   }
   .form-input3.activeLD{
     background-color: #fff;
     border-color: #000;
+    color: #000000;
   }
   .form-input4.activeLD{
     background-color: #fff;
     border-color: #000;
+    color: #000000;
   }
 
-  .form-input:focus{
+  .form-input1,.form-input2,.form-input3,.form-input4:focus{
     box-shadow: 0 0 0 0;
     outline: 0;
   }

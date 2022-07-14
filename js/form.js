@@ -3,7 +3,7 @@
     Parse.serverURL = "https://parseapi.back4app.com/";
 })();
 
-function createParseContato(){
+function createParseContato(e){
 
        let contato = Parse.Object.extend("contato");
        contato = new contato();
@@ -32,17 +32,11 @@ function createParseContato(){
                     document.getElementById('tel').value = "";
                 }, 5000);
                 
-        } else{             
-            document.getElementById('alert').style.display = "flex";
-            document.getElementById('formulario').style.border = "1px solid #9c1b1b";     
-                setTimeout(() => {
-                    document.getElementById('alert').style.display = "none";
-                    document.getElementById('formulario').style.border = "none";     
-                }, 2500);
         }
 }
 
-document.querySelector('.btn-submit').addEventListener("click", function(){
+document.querySelector('.btn-submit').addEventListener("click", function(e){
+    e.preventDefault();
     createParseContato();
 });
 

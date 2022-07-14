@@ -20,7 +20,7 @@
   }
 
   a{
-    color: #af126d;
+    color: #e083a2;
     text-decoration: none;
     transition: 0.3s;
     font-size: 1.1rem;
@@ -152,6 +152,7 @@
     border-radius: 11px;
     position: relative;
     cursor:pointer;
+    font-size: .7rem;
   }
 
   .btn-ld.activeLD{
@@ -159,7 +160,10 @@
   }
 
   .btn-ld:before{
-    content: '';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: '☼';
     position: absolute;
     width: 16px;
     height: 16px;
@@ -172,32 +176,11 @@
   }
 
   .btn-ld.activeLD:before{
+    content: '☾';
+    color: #ffffff;
     left: 28px;
     background-color: black;
   }
-
-  .text-light{
-    color: #fff;
-    font-size: 0.5rem;
-    display: flex;
-    font-weight: 100;
-    font-family: 'Roboto', sans-serif;
-  }
-  .text-light.activeLD{
-    display: none;
-  }
-
-  .text-dark{
-    color: #000;
-    font-size: 0.5rem;
-    display: none;
-    font-weight: 100;
-    font-family: 'Roboto', sans-serif;
-  }
-  .text-dark.activeLD{
-    display: flex;
-  }
-
   .titulo{
     color: #ffffff;
     margin-top: 100px;
@@ -325,18 +308,6 @@
 
   .form-title.activeLD{
     color: #000;
-  }
-
-
-  #alert{
-    background-color: #f0c0c0;
-    border: 1px solid #9c1b1b;
-    width: auto;
-    padding: 16px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 0.9rem;
-    display: none;
   }
 
   .form-label1, .form-label2, .form-label3, .form-label4{

@@ -39,8 +39,6 @@
     </nav>
     <div class="btn-ld-wrapper">
       <div class="btn-ld"></div>
-      <p class="text-light">LIGHT MODE</p>
-      <p class="text-dark">DARK MODE</p>
     </div>
   </header>
 
@@ -122,19 +120,18 @@
         animation, logos, banners, layouts, catalogs, advertisements, advertisements and many other things.</p>
     </section>
 
-    <div id="formulario">
+    <form id="formulario">
       <h2 class="form-title">Contact</h2>
-      <div id="alert">Please fill in all fields before submitting.</div>
       <label class="form-label1" for="nome">Name:</label>
-      <input class="form-input1" type="text" id="nome">
+      <input class="form-input1" id="nome" maxlength="120" minlength="3" required type="text" required pattern="([^\s][A-zÀ-ž\s]+)">
       <label class="form-label2" for="assunto">Subject:</label>
-      <input class="form-input2" type="text" id="assunto">
+      <input class="form-input2" required type="text" id="assunto">
       <label class="form-label3" for="email">Email:</label>
-      <input class="form-input3" type="text" id="email">
+      <input class="form-input3" required type="email" id="email">
       <label class="form-label4" for="tel">Tel:</label>
-      <input class="form-input4" type="text" id="tel">
+      <input class="form-input4" required type="tel" id="tel">
       <button type="submit" class="btn-submit">Submit</button>
-      </div>
+      </form>
       <div id="show-formulario">
         <p id="text"></p>
       </div>

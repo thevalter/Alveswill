@@ -43,14 +43,10 @@ const mobileNavbar = new MobileNavbar(
 mobileNavbar.init();
 
 let btn = document.querySelector('.btn-ld');
-let textLight = document.querySelector('.text-light');
-let textDark = document.querySelector('.text-dark');
 
 btn.addEventListener('click', () => {
 
   btn.classList.toggle('activeLD');
-  textLight.classList.toggle('activeLD');
-  textDark.classList.toggle('activeLD');
   document.querySelector('body').classList.toggle('activeLD');
   document.querySelector('.logo').classList.toggle('activeLD');
   document.querySelector('nav').classList.toggle('activeLD');

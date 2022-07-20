@@ -1,0 +1,75 @@
+.dark nav span {
+    color: #FFF;
+    text-shadow: 1px 2px 3px #000000;
+}
+
+  .dark,
+  .dark .menu {
+      background-color: #263238;
+      transition: background .4s;
+  }
+
+  .dark .menu{
+    transition: background .4s;
+    transition: 1s;
+  }
+
+  .dark .bi-sun {
+      display: none;
+  }
+
+  .dark .bi-moon {
+      display: block;
+      color: #eae7e7;
+  }
+
+  .dark .sideMenu i {
+      color: #e0dfdf;
+  }
+
+  .dark .links a {
+      color: #e0dfdf;
+  }
+  
+  .dark .links a:hover,
+  .dark .icons i:hover{
+    color: #9e8c54;
+  }
+
+  .dark .presentation h1{
+    color: #e0dfdf;
+    text-shadow: 1px 2px 3px #000000;
+  }
+
+  .dark .presentation h2{
+    color: #9e8c54;
+  }
+
+  .dark .content p{
+    color: #e0dfdf;
+  }
+
+  .dark .icons i{
+    color: #e0dfdf;
+  }
+
+  .dark form span,
+  .dark form label{
+    color: #e0dfdf;
+  }
+
+  .dark form button:hover{
+    color: #9e8c54;
+  }
+
+  .dark form input{
+    background-color: transparent;
+  }
+
+  .dark footer{
+    color: #e0dfdf;
+  }
+
+  .dark footer i:hover{
+    color: #9e8c54;
+  }

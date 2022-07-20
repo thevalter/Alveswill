@@ -1,0 +1,235 @@
+  
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Koulen&family=Roboto:wght@100&display=swap');
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  body {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+
+  nav span{
+    font-size: 2.3rem;
+    font-weight: 500;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 1px 1px 3px #575657;
+    margin-left: 4rem;
+  }
+  
+  .sideMenu {
+    display: none;
+    visibility: hidden;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    width: auto;
+    transition: 0;
+  }
+
+  .menu input[type="checkbox"]{
+    display: none;
+  }
+
+  .menu i{
+    padding-right: 2rem;
+    cursor: pointer;
+    color: #363535;
+  }
+
+  .menu i:hover{
+    opacity: .6;
+  }
+
+  .menu .bi-moon{
+    display: none;
+  }
+
+  .links a {
+    color: #363535;
+    text-decoration: none;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    transition: .5s;
+  }
+
+  .links #contact{
+    padding: 7px 12px;
+    background-color: #636563;
+    color: #fff;
+    border-radius: 7px;
+  }
+  
+  .links a:hover,
+  .links #contact:hover{
+    color: #5c4f26;
+    opacity: .7;
+    background-color: transparent;
+    font-size: 1.2rem;
+  }
+
+  .icons{
+    display: none;
+    font-size: 1.5rem;
+  }
+
+  .presentation h1{
+    font-family: 'Koulen', sans-serif;
+    font-size: 1.8rem;
+    max-width: 19rem;
+    margin: 4rem 0 0 15%;
+    text-shadow: 1px 1px 3px #9c999c;
+  }
+
+  .presentation h2{
+    font-family: 'Dancing', cursive;
+    max-width: 12rem;
+    font-size: 1rem;
+    margin: 0rem 5% 5rem 80%;
+    color: #5c4f26;
+    font-weight: 200;
+  }
+
+  .carousel-photo{
+    z-index: 1;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .carousel-photo .img-wrapper{
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .content #about,
+  .content #services{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8rem 2rem;
+  }
+
+  .content-img{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .content-img img{
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .content p{
+    width: 50%;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 6rem auto 20rem auto;
+    width: 22rem;
+  }
+
+  form span{
+    margin: 1.5rem auto;
+    font-size: 1.5rem;
+  }
+
+  form label{
+    margin: 1rem 0;
+  }
+
+  form input{
+    width: 100%;
+    border: none;
+    border-bottom: dashed;
+    border-color: #636563;
+  }
+
+  form button{
+    margin: 1rem 0;
+    width: 100%;
+    color: #e0dfdf;
+    background-color: #636563;
+    border: none;
+    padding: 12px 0;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: .6s;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+
+  form button:hover{
+    color: #5c4f26;
+    opacity: .7;
+    background-color: transparent;
+    font-size: 1.2rem;
+  }
+
+  #show-form{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    color: #5c4f26;
+    margin: 12rem auto;
+    transition: 2s;
+    width: 50%;
+    height: 300px;
+    border: 2px solid #5c4f26;
+  }
+
+  #show-form p{
+    margin: 5rem 1rem;
+  }
+
+  footer{
+    height: 8rem;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  footer .fot-icons{
+    display: flex;
+    width: 15rem;
+    margin: 2rem auto;
+    /* border: 1px solid red; */
+  }
+
+  footer i{
+    margin: 0 auto;
+  }
+
+  footer i:hover{
+    color: #5c4f26;
+    opacity: .7;
+    cursor: pointer;
+    font-size: 1.4rem;
+  }
+

@@ -1,113 +1,134 @@
-@media screen and (max-width: 999px) {
-
-    .nav-list {
-      position: absolute;
-      top: 8vh;
-      right: 0;
-      width: 42vw;
-      height: 30vh;
-      background: #000000;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-      transform: translateX(100%);
-      transition: transform 0.3s ease-in;
-    }
-
-    .nav-list.activeLD{
-      background: #fff;
-    }
-    
-    .logo{
-      margin-right: 50%;
-    }
-
-    .nav-list li {
-      margin-left: 0;
-      opacity: 0;
-    }
-
-    #contact{
-      background-color: #000000;
-    }
-
-    #contact.activeLD{
-      background-color: #ffffff;
-    }
-
-    .icons-wrapper{
-      display: flex;
-      width: 50%;
-      justify-content: space-around;
-      transition: 0.3s;
-    }
-    
-    .mobile-menu {
-      display: block;
-    }
-
-    .footer-icons-wrapper{
-      width: 30%;
-    }
-
-    #sobre p{
-      margin-left: 5%;
-    }
-
-    .img-sobre{
-      height: 100px;
-      width: 35%;
-    }
-
-    .img-sobre img{
-      max-height: 100px;
-    }
-    
-    .img-servicos{
-      width: 35%;
-      height: 100px;
-    }
-
-    .img-servicos img{
-      max-height: 100px;
-    }
-
-    #servicos p{
-      margin-right: 5%;
-    }
+@media screen and (max-width: 800px) {
+  .sideMenu {
+    display: initial;
+    visibility: visible;
+    position: fixed;
+    right: 2rem;
+    z-index: 10;
   }
 
-  @media screen and (max-width: 700px) {
-
-    .logo{
-      margin-right: 35%;
-      font-size: 2.2rem;
-    }
-
-    .titulo{
-      font-size: 1.5rem;
-      width: 40%;
-      margin-left: 10%;
-    }
-
-    #sobre p{
-      font-size: 0.9rem;
-    }
-
-    #servicos p{
-      font-size: 0.9rem;
-    }
-
-    #formulario{
-      margin-left: 17.5%;
-      margin-right: 17.5%;
-      width: 65%;
-    }
-
-    #show-formulario{
-      font-size: 1.2rem;
-      width: 60%;
-      margin-right: 20%;
-      margin-left: 20%;
-    }
+  .sideMenu i {
+    position: relative;
+    z-index: 1;
+    font-size: 1.8rem;
+    cursor: pointer;
   }
+
+  .sideMenu #open {
+    display: block;
+  }
+
+  .sideMenu #close {
+    display: none;
+  }
+
+  .menu {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -1000px;
+    height: 100vh;
+    background: #F9FAFB;
+    width: 15rem;
+    padding: 2rem;
+    transition: all 2s;
+    z-index: 5;
+  }
+
+  .menu.active {
+    right: 0;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
+  }
+
+  .menu label {
+    width: 1.5rem;
+    margin-right: 8rem;
+  }
+
+  .menu .links,
+  .menu .buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .links {
+    margin: 3rem auto;
+    text-align: center;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 50vh;
+  }
+
+  .icons i {
+    padding: 0 1rem;
+  }
+
+  .icons i:hover {
+    color: #5c4f26;
+    opacity: .7;
+    font-size: 1.6rem;
+  }
+
+  .content #about,
+  .content #services {
+    margin: 4rem 2rem;
+  }
+
+  .content-img {
+    width: 45%;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  nav span {
+    margin-left: 1.5rem;
+    font-size: 2rem;
+  }
+
+  .presentation h1 {
+    font-size: 1.6rem;
+    max-width: 12rem;
+  }
+
+  .presentation h2 {
+    font-size: 1.1rem;
+    margin-left: 70%;
+  }
+
+  form{
+    width: 15rem;
+    margin: 6rem auto 16rem auto;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  nav span {
+    font-size: 1.4rem;
+    margin-left: 1.2rem;
+  }
+
+  .presentation h1{
+    font-size: 1.3rem;
+    max-width: 10rem;
+    margin-bottom: 1rem;
+  }
+
+  .presentation h2 {
+    font-size: 1rem;
+    margin-left: 50%;
+  }
+
+  footer{
+    font-size: .9rem;
+  }
+
+  footer .fot-icons{
+    width: 10rem;
+  }
+}
